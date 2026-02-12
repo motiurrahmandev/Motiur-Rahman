@@ -26,7 +26,7 @@ body {
 } */
 
 
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 @theme {
   --color-primary: #08f783;
@@ -41,13 +41,18 @@ body {
   --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
 /* Custom Utilities */
-@utility glass-panel {
+/*@utility glass-panel {
   background: rgba(20, 20, 20, 0.6);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -61,4 +66,207 @@ body {
   background-color: var(--color-background-dark);
   color: white;
   scroll-behavior: smooth;
+} */
+
+/* 
+@import "tailwindcss";
+
+@theme {
+  
+  --color-primary: #08f783;
+  --color-background-light: #f5f8f7;
+  --color-background-dark: #0f2319; 
+  --color-surface-dark: #111815;
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+
+  
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+
+
+  --radius-default: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  
+  --shadow-neon: 0 0 20px rgba(8, 247, 131, 0.15);
+  --shadow-neon-hover: 0 0 30px rgba(8, 247, 131, 0.3);
+
+ 
+  --animate-scroll: scroll 20s linear infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+}
+
+
+@utility glass-panel {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(8, 247, 131, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: var(--shadow-neon-hover);
+    transform: translateY(-5px);
+  }
+}
+
+@utility text-glow {
+  text-shadow: 0 0 20px rgba(8, 247, 131, 0.3);
+}
+
+
+@utility delay-* {
+  animation-delay: calc(var(--value) * 1ms);
+}
+
+
+@layer base {
+  body {
+    background-color: var(--color-background-dark);
+    color: white;
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background-dark);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #273a31;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+  }
+} */
+
+
+
+@import "tailwindcss";
+
+@theme {
+  /* --- Colors & Theme --- */
+  --color-primary: #08f783;
+  --color-primary-hover: #0af785;
+  --color-background-light: #f5f8f7;
+  --color-background-dark: #0f1110; /* Deep charcoal/black */
+  --color-glass-surface: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+
+  /* --- Fonts --- */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Space Grotesk", sans-serif;
+
+  /* --- Border Radius --- */
+  --radius-default: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* --- Animations --- */
+  --animate-scroll: scroll 40s linear infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* --- Custom Utilities --- */
+
+/* ১. গ্লাসমরফিজম প্যানেল */
+@utility glass-panel {
+  background: rgba(20, 25, 23, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(8, 247, 131, 0.4);
+    box-shadow: 0 0 25px rgba(8, 247, 131, 0.1);
+  }
+}
+
+/* ২. প্রিমিয়াম গ্লাস ইনপুট */
+@utility glass-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+
+  &:focus {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--color-primary-hover);
+    box-shadow: 0 0 15px rgba(10, 247, 133, 0.15);
+    outline: none;
+  }
+}
+
+/* ৩. অ্যাম্বিয়েন্ট গ্লো (ব্যাচগ্রাউন্ড সজ্জার জন্য) */
+@utility ambient-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(8, 247, 131, 0.07) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ৪. ডাইনামিক এনিমেশন ডিলয় */
+@utility delay-* {
+  animation-delay: calc(var(--value) * 1ms);
+}
+
+/* --- Base Styles --- */
+@layer base {
+  body {
+    background-color: var(--color-background-dark);
+    color: white;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  /* কাস্টম ক্লিন স্ক্রলবার */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background-dark);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #273a31;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a5548;
+  }
 }
