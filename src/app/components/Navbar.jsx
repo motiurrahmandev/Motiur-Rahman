@@ -37,7 +37,7 @@ const Navbar = () => {
             <Terminal size={16} className="sm:w-5 sm:h-5" />
           </motion.div>
           <span className="font-bold text-base sm:text-lg tracking-tight group-hover:text-primary transition-colors">
-            JD
+            MR
           </span>
         </Link>
 

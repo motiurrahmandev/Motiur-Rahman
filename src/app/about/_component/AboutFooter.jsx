@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useRef } from "react";
 
 function AboutFooter() {
@@ -31,7 +32,7 @@ function AboutFooter() {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="glass-panel rounded-2xl p-8 sm:p-12 text-center relative overflow-hidden group border border-primary/20 transition-colors duration-300"
+      className="glass-panel rounded-2xl my-12 p-8 sm:p-12 text-center relative overflow-hidden group border border-primary/20 transition-colors duration-300"
     >
       {/* Mouse following gradient */}
       <div
@@ -53,12 +54,12 @@ function AboutFooter() {
           I'd love to hear about it.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-          <button className="bg-primary hover:bg-emerald-400 text-background-dark font-bold py-3 px-8 rounded-lg transition-colors shadow-[0_0_20px_rgba(8,247,131,0.3)] hover:shadow-[0_0_30px_rgba(8,247,131,0.5)]">
+          <Link href="/contact" className="bg-primary hover:bg-emerald-400 text-background-dark font-bold py-3 px-8 rounded-lg transition-colors shadow-[0_0_20px_rgba(8,247,131,0.3)] hover:shadow-[0_0_30px_rgba(8,247,131,0.5)]">
             Get in Touch
-          </button>
-          <button className="bg-transparent border border-white/20 hover:border-white/50 text-white font-medium py-3 px-8 rounded-lg transition-colors">
+          </Link>
+          <Link href="/" className="bg-transparent border border-white/20 hover:border-white/50 text-white font-medium py-3 px-8 rounded-lg transition-colors">
             View Portfolio
-          </button>
+          </Link>
         </div>
       </div>
     </section>

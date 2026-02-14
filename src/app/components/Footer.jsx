@@ -138,7 +138,7 @@ const Footer = () => {
       {/* Floating Action Button - Back to Top */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-primary text-black shadow-[0_0_20px_rgba(6,249,132,0.4)] hover:scale-110 transition-transform flex items-center justify-center cursor-pointer"
+        className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-primary text-black shadow-[0_0_20px_rgba(6,249,132,0.4)] hover:scale-110 transition-transform flex items-center justify-center animate-bounce animate-duration-2000 cursor-pointer"
         aria-label="Back to top"
       >
         <ArrowUp size={24} />

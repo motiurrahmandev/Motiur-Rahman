@@ -35,7 +35,6 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import SimpleFooter from "./components/SimpleFooter";
 import Cursor from "./components/Cursor";
 
 const spaceGrotesk = Space_Grotesk({
@@ -44,8 +43,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "John Doe - Portfolio Vision",
-  description: "Creative Portfolio built with Next.js 16",
+  title: "Motiur Rahman",
+  description: "Crafting Conversion-Focused Websites & Future-Ready Digital Experiences",
   icons: {
     icon: '/favicon.ico',
   },

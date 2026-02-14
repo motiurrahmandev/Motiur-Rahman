@@ -196,7 +196,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <motion.h2 variants={itemVariants} className="text-xl md:text-2xl font-light text-white/60 max-w-2xl leading-relaxed mb-10">
-          Creative Developer & UI Designer specializing in building <span className="text-primary font-medium">exceptional digital experiences</span> with clean code and pixel-perfect design.
+          I design and build high-converting, modern web experiences using  <span className="text-primary font-medium">WordPress and modern frontend technologies</span>  — helping businesses grow online today and scale for tomorrow.
         </motion.h2>
 
         {/* CTA Buttons */}

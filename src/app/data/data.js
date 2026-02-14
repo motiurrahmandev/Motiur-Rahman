@@ -3,6 +3,7 @@
 export const NAV_LINKS = [
   { name: 'Home', href: '/', icon: 'Home' },
   { name: 'About', href: '/about', icon: 'User' },
+  { name: 'Services', href: '/services', icon: 'Wand2' },
   { name: 'Projects', href: '/project', icon: 'Folder' },
   { name: 'Blog', href: '/blog', icon: 'BookOpen' },
   { name: 'Contact', href: '/contact', icon: 'Mail' }
@@ -111,24 +112,24 @@ export const PROCESS_STEPS = [
 export const SERVICES = [
   {
     id: 1,
-    title: 'UI/UX Design',
+    title: 'Web Design',
     icon: 'Palette',
-    description: 'Creating intuitive and visually stunning interfaces that provide seamless user experiences. I focus on usability, accessibility, and modern design patterns.',
-    features: ['User Research & Personas', 'Wireframing & Prototyping', 'Design Systems']
+    description: 'Modern, responsive, and user-centric designs that capture your brand identity and engage your audience.',
+    features: ['Custom UI/UX Design', 'Responsive Layouts', 'Interactive Prototypes']
   },
   {
     id: 2,
-    title: 'Web Development',
-    icon: 'Terminal',
-    description: 'Building responsive, high-performance websites and web applications using the latest technologies. Clean code and scalability are my priorities.',
-    features: ['React / Next.js Development', 'API Integration', 'Performance Optimization']
+    title: 'Frontend Development',
+    icon: 'Code',
+    description: 'High-performance front-end solutions built with Next.js, React, and Tailwind CSS for seamless user experiences.',
+    features: ['React Core / Next.js', 'Performance Optimization', 'Clean & Scalable Code']
   },
   {
     id: 3,
-    title: 'Branding',
-    icon: 'Wand2',
-    description: 'Developing cohesive brand identities that resonate with your target audience. From logo design to comprehensive visual guidelines.',
-    features: ['Logo Design', 'Brand Strategy', 'Marketing Assets']
+    title: 'WordPress Development',
+    icon: 'Terminal',
+    description: 'Professional WordPress solutions, from custom themes to complex plugin integrations and site optimization.',
+    features: ['Custom Theme Dev', 'Elementor/Divi Expert', 'Speed & Security']
   }
 ];
 

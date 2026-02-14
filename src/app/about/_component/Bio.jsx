@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Hand, MapPin, Mail, Globe } from "lucide-react";
+import ProfileImage from "../../../../public/profileImage.jpg";
+import Link from "next/link";
 
 function Bio() {
   const imageVariant = {
@@ -50,7 +52,7 @@ function Bio() {
             data-alt="Portrait of a smiling professional male developer in a modern setting"
             style={{
               backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJallmOJTKC6WbYtjzovwsnzJRVR_UOneA6orUk6biuaRt7GxpCdGjdTiohqYD7eC2mGcrtrglQIWdssHu_p4Bw7UhgZxjKwIgIIgrrLQJdsVYARu6RJnha5_0-C7EROnTf3_YDve-I1_eyyCGGKMRxpXxEJyzSyaWAtQ9QJPYLS-uzrAx4IgiJLhrJzylekRvIejl0wba3QrJgHHOctqVf1XXTyU4KIKf-xIpuYVWdxBiETIa-GGPDtNiZcezH_H9VtN0Yz8aREZz')",
+                `url(${ProfileImage.src})`,
             }}
           />
           {/* Floating badge */}
@@ -72,7 +74,7 @@ function Bio() {
         <motion.div variants={itemVariant} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
           <Hand className="w-4 h-4 text-primary" />
           <span className="text-xs font-medium text-primary uppercase tracking-wide">
-            Hello, I'm John
+            Hello, I'm Motiur Rahman
           </span>
         </motion.div>
         <motion.h2 variants={itemVariant} className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
@@ -85,16 +87,16 @@ function Bio() {
         </motion.h2>
         <motion.div variants={itemVariant} className="glass-panel p-6 rounded-xl border border-white/5 space-y-4">
           <p className="text-slate-300 text-lg leading-relaxed">
-            I am a multidisciplinary developer and designer based in San
-            Francisco with a passion for building seamless digital experiences.
-            My work bridges the gap between functional engineering and aesthetic
-            design.
+            I am a passionate WordPress and Frontend Developer focused on building modern, fast, and conversion-driven websites. Currently, I specialize in creating high-quality landing pages, business websites, and marketing-focused web experiences using WordPress, Elementor, and modern frontend tools.
+
+            My goal is not only to build visually appealing websites but also to create digital experiences that help businesses generate leads, increase sales, and grow their online presence.
+
+
           </p>
           <p className="text-slate-400 leading-relaxed">
-            With over 5 years of experience in the tech industry, I've helped
-            startups and established companies launch products that users love.
-            I believe in clean code, accessible interfaces, and user-centric
-            problem solving.
+            I am continuously learning and improving my skills in modern frontend and full-stack technologies to move toward building scalable web applications and digital products. In the future, I aim to work on larger web platforms, SaaS products, and advanced web solutions that solve real business problems.
+
+            I believe in clean design, strong performance, and user-focused development — and I am committed to delivering work that creates real value.
           </p>
         </motion.div>
         <motion.div variants={itemVariant} className="flex flex-wrap gap-4 pt-2">
@@ -103,7 +105,7 @@ function Bio() {
             <div className="flex flex-col">
               <span className="text-xs text-slate-400">Location</span>
               <span className="text-sm font-semibold text-white">
-                San Francisco, CA
+                Rajshahi, Bangladesh
               </span>
             </div>
           </div>
@@ -112,18 +114,18 @@ function Bio() {
             <div className="flex flex-col">
               <span className="text-xs text-slate-400">Email</span>
               <span className="text-sm font-semibold text-white">
-                hello@johndoe.dev
+                rmdmotiur144@gmail.com
               </span>
             </div>
           </div>
           <div className="flex items-center gap-3 glass-card px-4 py-3 rounded-lg">
             <Globe className="w-5 h-5 text-primary" />
-            <div className="flex flex-col">
+            <Link href="https://motiur-rahman-gamma.vercel.app/" className="flex coursor-pointer flex-col">
               <span className="text-xs text-slate-400">Website</span>
               <span className="text-sm font-semibold text-white">
-                johndoe.dev
+                motiur-rahman
               </span>
-            </div>
+            </Link>
           </div>
         </motion.div>
       </motion.div>

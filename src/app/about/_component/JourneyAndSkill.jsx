@@ -12,8 +12,8 @@ function JourneyAndSkill() {
     offset: ["start end", "end start"],
   });
 
-  const xLeft = useTransform(scrollYProgress, [0, 1], [0, -100]);
-  const xRight = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const xLeft = useTransform(scrollYProgress, [0, 1], [0, -200]);
+  const xRight = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
   return (
     <div ref={containerRef} className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 overflow-hidden">
@@ -37,7 +37,7 @@ function JourneyAndSkill() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
           >
             <div className="absolute -left-[21px] top-1.5 h-3 w-3 rounded-full border-2 border-primary bg-background-dark group-hover:bg-primary transition-colors shadow-[0_0_10px_rgba(8,247,131,0.5)] z-10" />
             <div className="glass-card p-6 rounded-xl hover:border-primary/30">
@@ -65,7 +65,7 @@ function JourneyAndSkill() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
           >
             <div className="absolute -left-[21px] top-1.5 h-3 w-3 rounded-full border-2 border-slate-600 bg-background-dark group-hover:border-primary group-hover:bg-primary transition-colors z-10" />
             <div className="glass-card p-6 rounded-xl hover:border-primary/30">
@@ -91,7 +91,7 @@ function JourneyAndSkill() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
           >
             <div className="absolute -left-[21px] top-1.5 h-3 w-3 rounded-full border-2 border-slate-600 bg-background-dark group-hover:border-primary group-hover:bg-primary transition-colors z-10" />
             <div className="glass-card p-6 rounded-xl hover:border-primary/30">
@@ -157,7 +157,7 @@ function JourneyAndSkill() {
             >
               <div className="flex justify-between mb-2">
                 <span className="text-sm font-medium text-white">
-                  UI/UX Design
+                  Wordpress Development
                 </span>
                 <span className="text-sm font-bold text-primary">85%</span>
               </div>
@@ -200,7 +200,7 @@ function JourneyAndSkill() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <div className="flex justify-between mb-2">
-                <span className="text-sm font-medium text-white">DevOps</span>
+                <span className="text-sm font-medium text-white">Web Design</span>
                 <span className="text-sm font-bold text-primary">60%</span>
               </div>
               <div className="w-full bg-slate-700/50 rounded-full h-2 overflow-hidden">

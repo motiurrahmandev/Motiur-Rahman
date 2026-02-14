@@ -28,18 +28,18 @@ function InfoCard() {
     {
       icon: <Mail size={20} />,
       label: 'Email',
-      value: 'hello@portfolio.dev',
-      link: 'mailto:hello@portfolio.dev',
+      value: 'rmdmotiur144@gmail.com',
+      link: 'mailto:rmdmotiur144@gmail.com',
     },
     {
       icon: <MapPin size={20} />,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Rajshahi, Bangladesh',
     },
     {
       icon: <Clock size={20} />,
       label: 'Timezone',
-      value: 'PST (UTC-8)',
+      value: 'GMT+6',
     },
   ];
 
