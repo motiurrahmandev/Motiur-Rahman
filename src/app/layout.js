@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${spaceGrotesk.variable} font-body antialiased bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden selection:bg-primary selection:text-black min-h-screen flex flex-col cursor-none`}>
+      <body className={`${spaceGrotesk.variable} font-body antialiased bg-[#0f1110] text-white font-display overflow-x-hidden selection:bg-primary selection:text-black min-h-screen flex flex-col cursor-none`}>
         <Cursor />
         <Navbar />
         {children}

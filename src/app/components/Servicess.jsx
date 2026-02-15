@@ -3,13 +3,14 @@
 import React from 'react';
 import { SERVICES } from '../data/data';
 import { motion } from 'framer-motion';
-import { Palette, Terminal, Wand2, CheckCircle2 } from 'lucide-react';
+import { Palette, Terminal, Wand2, CheckCircle2, Code } from 'lucide-react';
 
 const Services = () => {
   const IconMap = {
     Palette: Palette,
     Terminal: Terminal,
-    Wand2: Wand2
+    Wand2: Wand2,
+    Code: Code
   };
 
   const containerVariants = {

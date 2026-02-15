@@ -167,8 +167,8 @@ body {
   /* --- Colors & Theme --- */
   --color-primary: #08f783;
   --color-primary-hover: #0af785;
-  --color-background-light: #f5f8f7;
-  --color-background-dark: #0f1110; /* Deep charcoal/black */
+  --color-background: #0f1110;
+  --color-surface-dark: #111111;
   --color-glass-surface: rgba(255, 255, 255, 0.03);
   --color-glass-border: rgba(255, 255, 255, 0.08);
 
@@ -187,13 +187,25 @@ body {
   --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
   @keyframes fade-in-up {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -234,7 +246,7 @@ body {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(8, 247, 131, 0.07) 0%, rgba(0,0,0,0) 70%);
+  background: radial-gradient(circle, rgba(8, 247, 131, 0.07) 0%, rgba(0, 0, 0, 0) 70%);
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -248,7 +260,7 @@ body {
 /* --- Base Styles --- */
 @layer base {
   body {
-    background-color: var(--color-background-dark);
+    background-color: var(--color-background);
     color: white;
     font-family: var(--font-sans);
     scroll-behavior: smooth;
@@ -259,13 +271,16 @@ body {
   ::-webkit-scrollbar {
     width: 8px;
   }
+
   ::-webkit-scrollbar-track {
     background: var(--color-background-dark);
   }
+
   ::-webkit-scrollbar-thumb {
     background: #273a31;
     border-radius: 4px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background: #3a5548;
   }
